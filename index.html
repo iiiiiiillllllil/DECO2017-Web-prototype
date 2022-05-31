@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.92.0">
+  <title>Studbud</title>
+  <!-- Bootstrap core CSS -->
+  <meta name="theme-color" content="#7952b3">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+  </style>
+
+  <!-- Custom styles for this template -->
+  <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./static/css/sticky-footer-navbar.css" rel="stylesheet">
+  <link href="./static/css/common.css" rel="stylesheet">
+  <link href="./static/css/reminds.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="d-flex flex-column h-100" style="position: static;">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid text-white">
+        <div class="col-xl-4 col-md-4 text-center d-none d-md-block ">
+
+          <div class="g-center">
+            <div style="position: relative;">
+              <span class="material-icons hande" id="starDialog">
+                star
+              </span>
+              <div class="star-dialog hide-element">
+                <div class="r-sjx"></div>
+                <div class="r-content text-center text-dark" style="color: #222;">
+                  <div class="px-3 a-row pb-20">
+                    <div class="a-col-1"></div>
+                    <div class="a-col-0">
+                      <div style="width: 200px;">
+                        <div class="g-center">
+                          <svg t="1652892771030" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3280" width="48" height="48">
+                            <path
+                              d="M502.938 470.289c0.968 0.541 1.935 0.967 3.109 1.509l0.967 0.207c5.25 1.186 10.189 0.426 15.014-1.716l0.207-0.426 5.688-2.142 0.54-0.219h0.427c38.81-12.112 70.228-31.407 95.845-56.608 27.666-27.125 48.572-60.893 62.826-97.987 3.868-10.512-0.956-21.99-11.363-25.743-10.499-4.283-22.186 0.967-26.157 11.375-12.653 31.626-30.015 60.673-53.604 83.837-20.908 20.367-46.858 36.564-79.232 46.535l-0.968 0.53-2.36 0.426-1.934 0.967-1.819-0.967-1.393-0.426-1.923-0.53c-31.96-9.971-58.324-26.168-79.023-46.535-23.799-23.164-41.171-52.211-53.708-83.837-3.869-10.408-15.761-15.658-25.731-11.375-10.513 3.753-15.232 15.231-11.479 25.743 14.368 37.095 34.734 70.862 62.826 97.987 25.202 25.201 57.149 44.497 95.639 56.608h0.321l0.645 0.219 5.25 2.142 1.39 0.426z"
+                              fill="" p-id="3281"></path>
+                            <path
+                              d="M820.085 880.92h-28.091c-4.939-102.281-28.092-179.37-61.651-237.154l-0.426-1.186c-35.172-60.466-81.812-99.921-130.8-124.04 48.988-24.443 95.628-63.47 130.8-123.936l0.426-1.083c34.734-60.247 58.542-141.621 62.181-250.556h27.562c18.756 0 33.549-14.689 33.549-33.341 0-18.444-14.793-33.238-33.549-33.238H203.927c-18.549 0-33.561 14.794-33.561 33.238 0 18.651 15.012 33.341 33.561 33.341h27.653c3.972 108.935 27.343 190.309 62.077 250.556l0.645 1.083c35.276 60.466 81.697 99.493 130.915 123.936-49.218 24.119-95.639 63.574-130.915 124.04l-0.645 1.186c-33.341 57.784-56.39 134.873-61.433 237.154h-28.298c-18.549 0-33.561 14.795-33.561 32.813 0 19.077 15.012 33.882 33.561 33.882h616.158c18.756 0 33.549-14.805 33.549-33.882 0.001-18.018-14.792-32.813-33.548-32.813zM287.867 767.703c10.085-40.952 23.809-75.156 40.536-103.675l0.426-1.496c40.422-69.482 97.987-106.575 156.53-124.697l2.36-1.394h0.529c1.187-0.425 2.36-0.967 3.326-1.818l0.428-0.541 1.507-0.968 0.209-0.426 1.391-1.497 0.221-0.438c0.966-0.955 1.495-2.141 2.463-3.315v-0.541c0.864-1.392 1.393-3.005 1.393-4.707l0.219-0.439v-1.495l0.219-1.187v-0.955l-0.219-1.187v-0.967l-0.219-0.853c0-1.715-0.528-3.431-1.393-4.823v-0.426c-0.968-1.509-1.497-2.477-2.463-3.327l-0.221-0.749-1.391-1.186h-0.209l-1.507-1.393-0.428-0.53c-0.966-0.645-2.14-1.394-3.326-2.153l-0.529-0.207-2.36-0.967c-58.543-17.58-116.108-55.216-156.53-125.122l-0.426-0.53c-31.418-54.894-52.866-129.844-56.724-230.731H752.32c-3.327 100.887-24.764 175.837-56.608 230.731l-0.529 0.53c-40.215 69.906-97.998 107.542-156.001 125.122l-2.901 0.967-0.528 0.207c-1.187 0.76-2.142 1.509-3.327 2.153l-0.428 0.53-1.393 1.393-1.715 1.186-0.218 0.749c-0.749 0.851-1.498 1.818-1.923 3.327l-0.438 0.426c-0.53 1.393-0.956 3.108-1.497 4.823v7.083c0.541 1.702 0.967 3.315 1.497 4.707l0.438 0.541c0.425 1.175 1.174 2.36 1.923 3.315l0.218 0.438 1.715 1.497v0.426l1.393 0.968 0.428 0.541c0.967 0.852 2.141 1.394 3.327 1.818h0.528l2.901 1.394c58.003 18.122 115.786 55.215 156.001 124.697l0.529 1.496c16.831 28.519 30.452 106.253 40.422 146.675-22.843-30.015-50.496-54.25-81.373-72.05-43.75-24.982-93.277-37.841-143.025-37.841-49.217 0-98.746 12.858-142.703 38.06-30.232 17.581-55.339 33.762-82.165 59.831l-7 12 7.999-43zM276.504 884.92c29.097-66.845 61.87-81.827 112.688-111.313 37.416-21.874 79.979-32.812 122.543-32.812 43.104 0 85.449 10.938 123.084 32.812 50.818 29.486 64.822 39.542 112.678 107.313l-470.993 4z"
+                              fill="" p-id="3282"></path>
+                            <path d="M512 652c19.054 0 34.5-16.342 34.5-36.5S531.054 553 512 553s-34.5 42.342-34.5 62.5S492.946 652 512 652z" fill="" p-id="3283"></path>
+                          </svg>
+                        </div>
+
+                        <div id="countDown" class="bg-white text-nowrap b-r-40 mt-20 text-black" style="font-size: 13px;padding: 2px 5px;">
+                          00:00:00
+                        </div>
+
+                        <div class="row mt-20">
+                          <div class="col-6 g-center">
+                            <div class="heade-black" id="div_study">Study </div>
+                          </div>
+                          <div class="col-6 g-center">
+                            <div class="heade-black" id="div_stop"> Stop</div>
+                          </div>
+                        </div>
+                        <div class="row mt-20 mb-10">
+                          <div class="col-6 g-center">
+                            <div class="heade-black" id="div_break">Break</div>
+                          </div>
+                          <div class="col-6 g-center">
+                            <div class="heade-black" id="div_reset">Reset</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="a-col-1"></div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xl-4 col-md-4 text-center">Studbud</div>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <div class="col-3 text-white">Studbud</div> -->
+        <div class="col-xl-4 col-md-4 navbar-collapse collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+          </ul>
+
+          <ul class="d-flex navbar-nav  text-white ml-20" style="flex-direction: row;">
+            <li class="nav-item m-2">
+              <a class=" text-white" href="./index.html">
+                <i class="material-icons ">home</i>
+              </a>
+            </li>
+
+
+            <li class="nav-item m-2  ml-20">
+              <a class=" text-white" style="position:relative;">
+
+                <div id="keywordDialog" class="hande">
+                  <svg t="1652808685681" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5413"  width="25" height="25">
+                    <path d="M375.466667 836.266667H238.933333L85.333333 187.733333h136.533334z" fill="#ffffff" opacity=".99" p-id="5414" data-spm-anchor-id="a313x.7781069.0.i17" class="selected">
+                    </path>
+                    <path d="M251.306667 836.266667h136.533333l153.6-648.533334h-136.533333z" fill="#ffffff" opacity=".99" p-id="5415" data-spm-anchor-id="a313x.7781069.0.i14" class="selected"></path>
+                    <path d="M772.693333 836.266667h-136.533333l-153.6-648.533334h136.533333z" fill="#ffffff" opacity=".99" p-id="5416" data-spm-anchor-id="a313x.7781069.0.i10" class="selected">
+                    </path>
+                    <path d="M648.533333 836.266667h136.533334l153.6-648.533334h-136.533334z" fill="#ffffff" opacity=".99" p-id="5417" data-spm-anchor-id="a313x.7781069.0.i9" class="selected"></path>
+                  </svg>
+                </div>
+
+                <div class="keyword-dialog hide-element">
+                  <div class="r-sjx"></div>
+                  <div class="r-content text-dark">
+                    <div class="row">
+                      <div class="col-offset-3 d-none d-sm-block "></div>
+                      <div class="px-3 a-row pb-20">
+                        <div class="a-col-1"></div>
+                        <div class="a-col-0 k-d-content" style="min-width: 322px;">
+                          <div class="g-center">
+                            <input class="bg-dark text-nowrap b-r-40 mt-10 text-white header-search" placeholder="search" />
+                          </div>
+                          <div class="bg-white p-2 b-r-10">
+                            <div class="fs-xl mt-5">Study</div>
+                            <p>verb </p>
+                            <p>noun, plural stud·ies.</p>
+                            <hr />
+                            <div>noun, plural stud·ies.</div>
+                            <p>1.application of the mind to the acquisition of knowledge, as by reading, investigation, or reflection</p>
+                            <p>2.the cultivation of a particular branch of learning, science, or art</p>
+
+                            <div class="mt-2">
+                              verb (used without object), stud·ied, stud·y·ing.
+                            </div>
+                            <p>
+                              1.to apply oneself to the acquisition of knowledge, as by reading, investigation, or practice.
+                            </p>
+                            <p>
+                              2.to apply oneself; endeavor.
+                            </p>
+                          </div>
+
+
+                        </div>
+                        <div class="a-col-1"></div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item m-2 ml-20">
+              <a class=" text-white" style="position:relative;">
+                <i class="material-icons hande" id="schedule">schedule</i>
+
+                <div class="reminds hide-element">
+                  <div class="r-sjx"></div>
+                  <div class="r-content text-center">
+                    <div class="p-3 a-row">
+                      <div class="a-col-1"></div>
+                      <div class="a-col-0">
+                        <span class="material-icons " style="font-size:2rem"> alarm </span>
+
+                        <div class="bg-white text-nowrap b-r-40 mt-20 text-black" style="font-size: 13px;padding: 2px 5px;">
+                          00:00:00
+                        </div>
+
+                        <div class="bg-dark text-nowrap b-r-40 mt-10" style="font-size: 13px;padding: 2px 5px;">
+                          Reminds me to have a break
+                        </div>
+                        <div class="bg-dark text-nowrap b-r-40 mt-10" style="font-size: 13px;padding: 2px 5px;">
+                          Reminds me to study
+                        </div>
+                      </div>
+                      <div class="a-col-1"></div>
+
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item m-2 ml-20">
+              <a class=" text-white" style="position:relative;">
+                <i class="material-icons hande" id="music_note">music_note</i>
+
+                <div class="music-dialog hide-element">
+                  <div class="r-sjx"></div>
+                  <div class="r-content text-center">
+                    <div class="px-3 a-row pb-20">
+                      <div class="a-col-1"></div>
+                      <div class="a-col-0">
+
+
+                        <input class="bg-dark text-nowrap b-r-40 mt-10 text-white header-search" placeholder="search" />
+                        <div class="g-center m-2">
+                          <div class="header-music-img"></div>
+                        </div>
+                        <!-- <audio class="header-audio" controls src='/static/muisc/anthem-of-victory-111206.mp3'></audio> -->
+                        <audio class="header-audio" controls src='https://live-radio01.mediahubaustralia.com/2FMW/mp3/'></audio>
+
+                      </div>
+                      <div class="a-col-1"></div>
+
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item m-2  ml-20">
+              <a href="./kanban-borad.html" class=" text-white">
+                <i class="material-icons ">calendar_month</i>
+              </a>
+            </li>
+            <li class="nav-item ml-50">
+              <a class="nav-link disabled"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- Begin page content -->
+  <main class="flex-shrink-0">
+    <div class="container mt-20">
+      <div class="row text-white h1" style="white-space: nowrap;">
+        <div class="col-md-6 col-sm-6 p-3">
+
+          <div class="home-img home-img-class position-relative">
+            <a class="position-absolute top-50 start-50 translate-middle home-a" href="./class.html">Class</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 p-3">
+          <div class="home-img home-img-kanban  position-relative">
+            <a class="position-absolute top-50 start-50 translate-middle home-a" href="./kanban-borad.html">
+              Kanban Borad
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 p-3">
+          <div class="home-img home-img-assessment  position-relative">
+            <a class="position-absolute top-50 start-50 translate-middle  home-a" href="./class-assessment.html">
+              Assessment
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 p-3">
+          <div class="home-img home-img-contact-us  position-relative">
+            <a class="position-absolute top-50 start-50 translate-middle " style="color: #666" href="./contact-us.html">
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+
+  <script src="./static/js/bootstrap.bundle.min.js"></script>
+  <script src="./static/js/header.js"></script>
+
+</body>
+
+</html>
