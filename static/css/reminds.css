@@ -1,0 +1,123 @@
+.music-dialog,
+.keyword-dialog,
+.star-dialog,
+.reminds {
+  position: absolute;
+  width: 260px;
+  margin-left: -120px;
+
+}
+
+
+.r-sjx {
+  border-style: solid;
+  border-width: 10px 130px 20px 130px;
+  border-color: transparent transparent #E4E4E4 transparent;
+  width: 0px;
+  height: 0px;
+  margin-top: 0px;
+
+}
+
+.r-content {
+  background-color: #E4E4E4;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+
+.header-search {
+  font-size: 13px;
+  padding: 2px 5px;
+}
+
+.header-search::placeholder {
+  color: #fff;
+}
+
+.header-audio {
+  margin-top: 10px;
+  height: 30px;
+  width: 100%;
+
+}
+
+.header-music-img {
+  background-image: url('../images/muisc-01.jpg');
+  height: 110px;
+  width: 110px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+
+
+.keyword-dialog {
+  width: 360px;
+  margin-left: -170px;
+}
+
+.keyword-dialog .r-sjx {
+  border-width: 10px 180px 20px 180px;
+}
+
+.keyword-dialog p {
+  margin-bottom: 0px;
+  font-size: 12px;
+
+}
+
+
+.heade-black {
+  background-color: #202020;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  height: 20px;
+  width: 70px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+  .keyword-dialog {
+    width: 300px;
+    margin-left: -83px;
+  }
+
+  .keyword-dialog .k-d-content {
+    min-width: 270px !important;
+  }
+
+  .keyword-dialog .r-sjx {
+    border-width: 10px 210px 20px 98px;
+
+  }
+}
+
+a {
+  color: unset;
+
+}
+
+.bg-color-1 {
+  background-color: #34AC4C;
+}
+
+.bg-color-2 {
+  background-color: #E5DE0E;
+}
+
+
+.g-fixed {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
