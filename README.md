@@ -45,5 +45,11 @@ Scott Anderson. (2021). No title[Image]
 Retrieved from https://unsplash.com/photos/8eQmqE8o8jU
 
 Radio:
-ABC Radio: https://live-radio01.mediahubaustralia.com/2FMW/mp3/
-(I cleared my web browser history; the original website can’t be found)
+ABC Classic Sydney 
+https://live-radio01.mediahubaustralia.com/2FMW/mp3/ （This is the one I'm using in my code)
+https://tunein.com/radio/ABC-Classic-Sydney-929-s99441/ ( This is where I found the radio station).
+
+Dictionary:
+Cambridge Dictionary
+https://dictionary.cambridge.org/zhs/
+
